@@ -19,7 +19,7 @@ jobs:
         java-version: '11'
 
     - name: Build and Package
-      run: mvn clean package
+      run: mvn install
 
     - name: Publish to GitHub Packages
       run: |
