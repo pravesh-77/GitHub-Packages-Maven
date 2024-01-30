@@ -40,7 +40,7 @@
     <distributionManagement>
         <repository>
             <id>github</id>
-            <name>GitHub Packages</name>
+            <name>GitHub-Packages-Maven</name>
             <url>https://maven.pkg.github.com/pravesh-77/pravesh-77</url>
         </repository>
     </distributionManagement>
