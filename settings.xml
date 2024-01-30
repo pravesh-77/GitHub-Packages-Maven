@@ -30,7 +30,6 @@
     <server>
       <id>github</id>
       <username>pravesh-77</username>
-      <accessToken>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</accessToken>
     </server>
   </servers>
 </settings>
