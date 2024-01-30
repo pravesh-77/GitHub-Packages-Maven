@@ -23,6 +23,6 @@ jobs:
 
     - name: Publish to GitHub Packages
       run: |
-        mvn deploy -Dregistry=https://maven.pkg.github.com/pravesh-77/GitHub-Packages-Maven 
+        mvn deploy
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
