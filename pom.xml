@@ -61,13 +61,14 @@
 				</configuration>
 			</plugin>
 		</plugins>
-	</build>
+	
 	<distributionManagement>
         <repository>
         <id>github</id>
         <url>https://maven.pkg.github.com/pravesh-77/GitHub-Packages-Maven</url>
         </repository>
         </distributionManagement>
+</build>
 
 
 	<repositories>
