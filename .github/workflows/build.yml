@@ -19,6 +19,10 @@ jobs:
         java-version: '11'
         server-id: github
         setting-path: ${{github.workspace }}
-            
     - name: Build and Package
       run: mvn install
+
+    - name: Publish to GitHub Packages
+      run: mvn deploy
+      env:
+        GH_TOKEN: ${{ secrets.test1234 }}
