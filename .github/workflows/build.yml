@@ -18,7 +18,13 @@ jobs:
         distribution: 'adopt'
         java-version: '11'
         server-id: github
-        setting-path: ${{github.workspace }}
-            
+        setting-path: ${{ github.workspace }}
+      
     - name: Build and Package
       run: mvn install
+
+    - name: Deploy to GitHub Packages
+      run: mvn deploy
+      env:
+        USERNAME: ${{ secrets.GITHUB_USERNAME }}
+        TOKEN: ${{ secrets.GITHUB_TOKEN }}
