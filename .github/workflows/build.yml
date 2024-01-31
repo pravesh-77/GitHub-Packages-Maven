@@ -21,3 +21,8 @@ jobs:
             
     - name: Build and Package
       run: mvn install
+
+    - name: Publish to GitHub Packages
+      run: mvn deploy
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
