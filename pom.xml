@@ -50,6 +50,12 @@
 	</dependencies>
 
 	<build>
+		<distributionManagement>
+        <repository>
+        <id>github</id>
+        <url>https://maven.pkg.github.com/pravesh-77/GitHub-Packages-Maven</url>
+        </repository>
+        </distributionManagement>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -63,15 +69,10 @@
 		</plugins>
 	
 	
-	</build>
 
-<build>
-	<distributionManagement>
-        <repository>
-        <id>github</id>
-        <url>https://maven.pkg.github.com/pravesh-77/GitHub-Packages-Maven</url>
-        </repository>
-        </distributionManagement>
+
+
+	
 </build>
 	<repositories>
 		<repository>
